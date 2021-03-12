@@ -13,6 +13,7 @@
 		28C69F4E204F6ACA00949F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C69F4C204F6ACA00949F30 /* Main.storyboard */; };
 		28C69F50204F6ACA00949F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C69F4F204F6ACA00949F30 /* Assets.xcassets */; };
 		28C69F53204F6ACA00949F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C69F51204F6ACA00949F30 /* LaunchScreen.storyboard */; };
+		6F330CBC25FBBFCA00F767CC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F330CBB25FBBFCA00F767CC /* InfoView.swift */; };
 		6F35DA5525F7A83C00764E5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35DA5425F7A83C00764E5D /* ContentView.swift */; };
 		6F35DA5825F7B8F400764E5D /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35DA5725F7B8F400764E5D /* ControlView.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		28C69F52204F6ACA00949F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C69F54204F6ACA00949F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4231095939659F544A7FE2D5 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		6F330CBB25FBBFCA00F767CC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		6F35DA5425F7A83C00764E5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F35DA5725F7B8F400764E5D /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		F768C173AC32106E22037F17 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				28C69F54204F6ACA00949F30 /* Info.plist */,
 				6F35DA5425F7A83C00764E5D /* ContentView.swift */,
 				6F35DA5725F7B8F400764E5D /* ControlView.swift */,
+				6F330CBB25FBBFCA00F767CC /* InfoView.swift */,
 			);
 			path = VisionFaceTrack;
 			sourceTree = "<group>";
@@ -120,7 +123,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					28C69F44204F6ACA00949F30 = {
@@ -170,6 +173,7 @@
 				6F35DA5825F7B8F400764E5D /* ControlView.swift in Sources */,
 				28C69F4B204F6ACA00949F30 /* ViewController.swift in Sources */,
 				28C69F49204F6ACA00949F30 /* AppDelegate.swift in Sources */,
+				6F330CBC25FBBFCA00F767CC /* InfoView.swift in Sources */,
 				6F35DA5525F7A83C00764E5D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +226,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -282,6 +287,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

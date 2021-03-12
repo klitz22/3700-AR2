@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ControlView: View {
     @Binding var isControlsVisible: Bool
+    @Binding var showInfo: Bool
     
     var body: some View {
         VStack {
@@ -19,7 +20,7 @@ struct ControlView: View {
             Spacer()
         
             if isControlsVisible{
-                ControlButtonBar()
+                ControlButtonBar(showInfo: $showInfo)
             }
         }
     }
@@ -56,20 +57,29 @@ struct ControlVisibilityToggleButton: View {
 }
 
 struct ControlButtonBar: View {
+    @Binding var showInfo: Bool
+    
     var body: some View{
         HStack{
             
+            // Sound Button
             ControllButton(systemIconName: "speaker.slash") {
                 print("Left Button Pressed")
             }
             
             Spacer()
             
+            // Info Button
             ControllButton(systemIconName: "info.circle") {
                 print("Info Button Pressed")
-            }
+                self.showInfo.toggle()
+            }.sheet(isPresented: $showInfo, content: {
+                // InfoView
+                InfoView(showInfo: $showInfo)
+            })
             Spacer()
             
+            // Settings
                 ControllButton(systemIconName: "gear") {
                     print("Right Button Pressed")
             }
